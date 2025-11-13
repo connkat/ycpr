@@ -10,11 +10,16 @@
 /coverage
 
 # next.js
+/.next/
 /out/
 
 # production
 /build
-tsconfig.tsbuildinfo
+*.tsbuildinfo
+next-sitemap.xml
+robots.txt
+sitemap.xml
+.sitemap.xml
 
 # misc
 .DS_Store
@@ -34,3 +39,16 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# package managers
+package-lock.json

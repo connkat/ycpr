@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST="{\"index.tsx -> ../components/Sections/StickyFooter\":{\"id\":\"index.tsx -> ../components/Sections/StickyFooter\",\"files\":[\"static/chunks/src_components_Sections_StickyFooter_tsx-src_hooks_useNavObserver_tsx.js\"]}}"
