@@ -16,7 +16,7 @@
     "plugin:@next/next/recommended",
     "prettier",
   ],
-  "ignorePatterns": ["*/public", "*/node_modules/*", "*/.next/*", "*/dist/*"],
+  "ignorePatterns": ["*/public", "*/node_modules/*", "*/.next/*", "*/dist/*", "*.md"],
   "rules": {
     "react/display-name": "off",
     // The next two rules should be errors. But for now we"ll leave them as warnings since this will take a while
@@ -44,7 +44,27 @@
     "react/react-in-jsx-scope": "off",
     "react/no-unescaped-entities": "off",
     "simple-import-sort/exports": "error",
-    "simple-import-sort/imports": "error",
+    "simple-import-sort/imports": [
+      "error",
+      {
+        "groups": [
+          // Side effect imports
+          ["^\\u0000"],
+          // Node.js builtins prefixed with `node:`
+          ["^node:"],
+          // External packages (react, next, etc.)
+          ["^@?\\w"],
+          // Internal absolute imports (components, data, hooks, images, types)
+          ["^(components|data|hooks|images|types)(/.*|$)"],
+          // Parent imports (../)
+          ["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+          // Sibling imports (./)
+          ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
+          // Style imports
+          ["^.+\\.s?css$"],
+        ],
+      },
+    ],
     "sort-imports": "off",
     "jsx-a11y/no-onchange": "off",
     "jsx-a11y/no-autofocus": "off",

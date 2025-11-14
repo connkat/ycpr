@@ -3,6 +3,7 @@ import React, {FC, memo, useMemo, useState} from 'react';
 
 import {resumeData, SectionId} from '../../../data/data';
 import Section from '../../Layout/Section';
+
 import EducationItem from './EducationItem';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';

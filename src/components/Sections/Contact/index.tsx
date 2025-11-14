@@ -7,6 +7,7 @@ import {ContactType, ContactValue} from '../../../data/dataDef';
 import LinkedInIcon from '../../Icons/LinkedInIcon';
 import PawIcon from '../../Icons/PawIcon';
 import Section from '../../Layout/Section';
+
 import ContactForm from './ContactForm';
 
 const ContactValueMap: Record<ContactType, ContactValue> = {

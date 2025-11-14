@@ -1,13 +1,14 @@
 import {Dialog, Transition} from '@headlessui/react';
 import classNames from 'classnames';
+import Image from 'next/image';
+import Link from 'next/link';
+import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
+
 import Socials from 'components/Socials';
 import {SectionId} from 'data';
 import {useNavObserver} from 'hooks';
 import {Clients, contact, homepage, Resume, START, testimonials} from 'images';
 import {about} from 'images/icons';
-import Image from 'next/image';
-import Link from 'next/link';
-import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
 export const headerID = 'headerNav';
 

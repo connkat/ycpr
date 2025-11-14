@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import {cloneElement, FC, memo, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
-import {PortfolioItem} from '../data/dataDef';
+import {PortfolioItem} from 'data';
 
 interface PortfolioModalProps {
   item: PortfolioItem | null;
