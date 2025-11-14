@@ -2,53 +2,51 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  // CalendarIcon,
-  // FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-// import InstagramIcon from '../components/Icon/InstagramIcon';
-import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import PawIcon from '../components/Icon/PawIcon';
-import avatar from '../images/avatar.png';
-// import TwitterIcon from '../components/Icon/TwitterIcon';
-import cloudsImage from '../images/clouds.png';
-import hillsImage from '../images/hills.png';
-import book from '../images/icons/book.png';
-import camera from '../images/icons/camera.png';
-import certificate from '../images/icons/certificate.png';
-import crisis from '../images/icons/crisis.png';
-import defragment from '../images/icons/defragment-0.png';
-import folder from '../images/icons/folder.png';
-import influencer from '../images/icons/influe.png';
-import media from '../images/icons/media.png';
-import media2 from '../images/icons/media2.png';
-import minesweeper from '../images/icons/minesweeper.png';
-import network from '../images/icons/network_televisons-3.png';
-import note from '../images/icons/note-2.png';
-import paint from '../images/icons/paint.png';
-import people from '../images/icons/people.png';
-import sound from '../images/icons/sound.png';
-import strategy from '../images/icons/strategy.png';
-import videocamera from '../images/icons/videocamera.png';
-import airmiles from '../images/portfolio/airmiles.png';
-import gi1 from '../images/portfolio/gi1.png';
-import gi2 from '../images/portfolio/gi2.png';
-import goodinvesting from '../images/portfolio/goodinvesting.png';
-import gsk from '../images/portfolio/gsk.png';
-import gsk1 from '../images/portfolio/gsk1.png';
-import gsk2 from '../images/portfolio/gsk2.png';
-import gsk3 from '../images/portfolio/gsk3.png';
-import gsk4 from '../images/portfolio/gsk4.png';
-import hut8 from '../images/portfolio/hut8.png';
-import pfizer from '../images/portfolio/pfizer.png';
-import Siggis from '../images/portfolio/Siggis.png';
-import TDM from '../images/portfolio/TDM.png';
-import THA from '../images/portfolio/THA.png';
-import profilepic from '../images/profilepic.png';
-import timeline from '../images/timeline2.png';
-import YCPR from '../images/YCPR.png';
+import LinkedInIcon from '../components/Icons/LinkedInIcon';
+import PawIcon from '../components/Icons/PawIcon';
+import {
+  airmiles,
+  avatar,
+  book,
+  camera,
+  certificate,
+  clouds as cloudsImage,
+  crisis,
+  defragment,
+  folder,
+  gi1,
+  gi2,
+  goodinvesting,
+  gsk,
+  gsk1,
+  gsk2,
+  gsk3,
+  gsk4,
+  hills as hillsImage,
+  hut8,
+  influencer,
+  media,
+  media2,
+  minesweeper,
+  network,
+  note,
+  paint,
+  people,
+  pfizer,
+  profilepic,
+  Siggis,
+  sound,
+  strategy,
+  TDM,
+  THA,
+  timeline,
+  videocamera,
+  YCPR,
+} from '../images';
 import {
   About,
   Client,
@@ -410,8 +408,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  // {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  // {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/yaminicoen/'},
   {label: 'Resume', Icon: ArrowDownTrayIcon, href: '/Yamini_Coen_Resume.pdf'},
   {label: 'Rescue Dog Love', Icon: PawIcon, href: 'https://www.rescuedoglove.com'},

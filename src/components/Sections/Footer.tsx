@@ -1,28 +1,22 @@
 import {Dialog, Transition} from '@headlessui/react';
 import classNames from 'classnames';
+import Socials from 'components/Socials';
+import {SectionId} from 'data';
+import {useNavObserver} from 'hooks';
+import {Clients, contact, homepage, Resume, START, testimonials} from 'images';
+import {about} from 'images/icons';
 import Image from 'next/image';
 import Link from 'next/link';
 import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
-import {SectionId} from '../../data/data';
-import {useNavObserver} from '../../hooks/useNavObserver';
-import About from '../../images/About.png';
-import Clients from '../../images/Clients.png';
-import contact from '../../images/contact.png';
-import homepage from '../../images/homepage-0.png';
-import Resume from '../../images/Resume.png';
-import START from '../../images/START.png';
-import testimonials from '../../images/testimonials.png';
-import Socials from '../Socials';
-
 export const headerID = 'headerNav';
 
-const StickyFooter: FC = memo(() => {
+const Footer: FC = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
     () => [
       {name: SectionId.Hero, image: homepage},
-      {name: SectionId.About, image: About},
+      {name: SectionId.About, image: about},
       {name: SectionId.Resume, image: Resume},
       {name: SectionId.Portfolio, image: Clients},
       {name: SectionId.Testimonials, image: testimonials},
@@ -210,5 +204,5 @@ const MobileNavItem: FC<{
   );
 });
 
-StickyFooter.displayName = 'Header';
-export default StickyFooter;
+Footer.displayName = 'Footer';
+export default Footer;

@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import {FC, memo, useCallback, useMemo, useState} from 'react';
 
-import {portfolioItems, portfolioSection, SectionId} from '../../data/data';
-import {PortfolioItem} from '../../data/dataDef';
-import Section from '../Layout/Section';
-import PortfolioModal from '../PortfolioModal';
+import {portfolioItems, portfolioSection, SectionId} from '../../../data/data';
+import {PortfolioItem} from '../../../data/dataDef';
+import Section from '../../Layout/Section';
+import PortfolioModal from './PortfolioModal';
 
 const Portfolio: FC = memo(() => {
   const {folderImage, backgroundImageSrc, windowBackgroundImage} = portfolioSection;

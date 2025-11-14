@@ -1,9 +1,8 @@
+import {headerID} from 'components/Sections/Footer';
+import {SectionId} from 'data';
 import {useEffect} from 'react';
 
-import {headerID} from '../components/Sections/StickyFooter';
-import {SectionId} from '../data/data';
-
-export const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
+const useNavObserver = (selectors: string, handler: (section: SectionId | null) => void) => {
   useEffect(() => {
     // Get all sections
     const headings = document.querySelectorAll(selectors);
@@ -58,3 +57,5 @@ export const useNavObserver = (selectors: string, handler: (section: SectionId |
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Dependency here is the post content.
 };
+
+export default useNavObserver;

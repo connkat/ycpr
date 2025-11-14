@@ -7,13 +7,13 @@ import Page from '../components/Layout/Page';
 import About from '../components/Sections/About';
 import Contact from '../components/Sections/Contact';
 import Hero from '../components/Sections/Hero';
-import Portfolio from '../components/Sections/Portfolio';
+import Portfolio from '../components/Sections/Portfolio/Portfolio';
 import Resume from '../components/Sections/Resume';
 import Testimonials from '../components/Sections/Testimonials';
 import {homePageMeta} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo
-const StickyFooter = dynamic(() => import('../components/Sections/StickyFooter'), {ssr: false});
+const Footer = dynamic(() => import('../components/Sections/Footer'), {ssr: false});
 
 const Home: FC = memo(() => {
   const {title, description} = homePageMeta;
@@ -112,7 +112,7 @@ const Home: FC = memo(() => {
         }}>
         <Contact />
       </section>
-      <StickyFooter />
+      <Footer />
     </Page>
   );
 });
